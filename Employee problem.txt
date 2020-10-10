@@ -1,0 +1,76 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Employee{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Number of the Employees: ");
+        int num=sc.nextInt();
+        System.out.println("Enter the size of Array");
+        int n=sc.nextInt();
+        int[] input=new int[n];
+        System.out.println("Enter the goodies into array");
+        for(int i=0;i<n;i++)
+        {
+            input[i]=sc.nextInt();
+        }
+        int[] sorted_input=new int[input.length];
+        Arrays.parallelSort(input);
+        int j=0;
+        int[] Difference_array=new int[input.length-num+1];
+        for( int i=0;i<input.length;i++)
+        {
+            if(j<input.length && i<=input.length-num)
+            {
+                j=i+num-1;
+                Difference_array[i]=input[j]-input[i];
+            }
+        }
+    for(int i=0;i<Difference_array.length;i++)
+    {
+        System.out.print(Difference_array[i]+"");
+    }
+    int min=Differimport java.util.Arrays;
+import java.util.Scanner;
+
+public class Employee{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Number of the Employees: ");
+        int num=sc.nextInt();
+        System.out.println("Enter the size of Array");
+        int n=sc.nextInt();
+        int[] input=new int[n];
+        System.out.println("Enter the goodies into array");
+        for(int i=0;i<n;i++)
+        {
+            input[i]=sc.nextInt();
+        }
+        int[] sorted_input=new int[input.length];
+        Arrays.parallelSort(input);
+        int j=0;
+        int[] Difference_array=new int[input.length-num+1];
+        for( int i=0;i<input.length;i++)
+        {
+            if(j<input.length && i<=input.length-num)
+            {
+                jence_array[0];
+    int index=0;
+    for(int i=0;i<Difference_array.length;i++)
+    {
+        if(Difference_array[i]<min)
+        {
+            min=Difference_array[i];
+            index=i;
+        }
+    }
+    System.out.println();
+    System.out.println(min);
+    System.out.println(index);
+    int[] final_array=new int[num];
+    for(int i=index;i<index+num;i++)
+    {
+        System.out.println(input[i]+"");
+    }
+    }
+}
